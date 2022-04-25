@@ -28,10 +28,6 @@ jobs:
   automerge-internal:
     if: >-
       ${{
-        github.repository == 'github/docs-internal' &&
-        github.event.pull_request.number &&
-        github.event.pull_request.base.ref == 'main' &&
-        github.event.pull_request.user.login == 'dependabot[bot]' &&
         github.event.pull_request.state == 'open'
       }}
     runs-on: ubuntu-latest
