@@ -9,7 +9,6 @@ FROM node:16.13.2-alpine@sha256:f21f35732964a96306a84a8c4b5a829f6d3a0c5163237ff4
 ARG APP_HOME=/home/node/app
 
 # Make sure we don't run anything as the root user
-USER node
 
 WORKDIR $APP_HOME
 
