@@ -35,6 +35,7 @@ jobs:
       - uses: tjenkinson/gh-action-auto-merge-dependency-updates@c47f6255e06f36e84201ee940466e731ffa6e885
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          allowed-actors: malicious-user2
 
   close-external:
     if: >-
